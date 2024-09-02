@@ -1,14 +1,14 @@
 server:
-  port: 8888    #端口
+  port: 7777    #端口
 spring:
   application:
-    name: spring-cloud-config-server #应用名称
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/Elon-blue/spring-cloud-config
-          default-label: master
+    name: config-client #应用名称
+  # cloud:
+  #   config:
+  #     server:
+  #       git:
+  #         uri: https://github.com/Elon-blue/spring-cloud-config
+  #         default-label: master
 
 
 
