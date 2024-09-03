@@ -1,5 +1,5 @@
 server:
-  port: 8888    #端口
+  port: 7781   #端口
 spring:
   application:
     name: spring-cloud-config-server #default
