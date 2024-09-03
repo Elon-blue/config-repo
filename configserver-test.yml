@@ -1,0 +1,48 @@
+server:
+  port: 7779    #端口
+spring:
+  application:
+    name: spring-cloud-config-server #test
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Elon-blue/spring-cloud-config
+      profile: test
+
+
+
+
+#management:
+#  endpoints:
+#    web:
+#      base-path: "/admin"
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    env:
+#      post:
+#        enabled: true
+#logging:
+#  level:
+#    com.netflix.discovery: 'OFF'
+#    org.springframework.cloud: 'DEBUG'
+#
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    statusPageUrlPath: /admin/info
+#    healthCheckUrlPath: /admin/health
+
+
+---
+
+##  profiles: cloud
+##eureka:
+##  password: password
+##  instance:
+##    hostname: ${vcap.application.uris[0]}
+##    nonSecurePort: 80
+##  client:
+##    serviceUrl:
+##      defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:${eureka.password:}@${PREFIX:}eureka.${application.domain:cfapps.io}}/eureka/
