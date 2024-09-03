@@ -9,7 +9,7 @@ spring:
         git:
           uri: https://github.com/Elon-blue/spring-cloud-config
           default-label: master
-      profile: prod
+        profile: prod
 
 
 
